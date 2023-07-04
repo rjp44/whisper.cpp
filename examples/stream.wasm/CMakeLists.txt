@@ -35,6 +35,9 @@ set_target_properties(${TARGET} PROPERTIES LINK_FLAGS " \
     -s INITIAL_MEMORY=1024MB \
     -s TOTAL_MEMORY=1024MB \
     -s FORCE_FILESYSTEM=1 \
+    -s EXPORT_ES6=1 \
+    -s MODULARIZE=1 \
+    -s DYNAMIC_EXECUTION=0 \
     -s EXPORTED_RUNTIME_METHODS=\"['print', 'printErr', 'ccall', 'cwrap']\" \
     ${EXTRA_FLAGS} \
     ")
